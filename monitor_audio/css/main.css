@@ -129,9 +129,6 @@ a i {
 .item-details .item-descr .colour-block .colour-block-list .colour-block-list-img + .colour-block-list-img {
   margin-left: 12px;
 }
-.item-details .item-descr .colour-block.silver {
-  border-bottom: none;
-}
 .item-details .item-descr .achievement .achievement-block-list {
   margin-left: 50px;
 }
