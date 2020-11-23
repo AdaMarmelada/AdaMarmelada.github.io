@@ -1,0 +1,234 @@
+.icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.3s opacity;
+}
+.icon.icon-arrow {
+  width: 14.38px;
+  height: 5.31px;
+  background-image: url("../img/icons/arrow-right.svg");
+}
+.icon.icon-cart {
+  width: 17.01px;
+  height: 13.02px;
+  background-image: url("../img/icons/cart.svg");
+}
+.icon.icon-phone {
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/icons/phone.svg");
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px!important;
+  color: #000;
+}
+a {
+  color: #000;
+}
+.title-1 {
+  font-weight: 500;
+  font-size: 60px;
+}
+.text-bold {
+  font-weight: 600;
+  font-size: 21px;
+}
+header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+header .header-logo__monitor {
+  width: 160px;
+}
+header .header-logo__pult {
+  width: 59px;
+}
+header .header-nav a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+header .header-nav a + a {
+  margin-left: 20px;
+}
+section {
+  padding-bottom: 40px;
+}
+.iframe-wrapper {
+  margin-bottom: 40px;
+}
+.iframe-wrapper iframe {
+  height: 617px;
+}
+a.btn {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+a.btn:hover {
+  opacity: 0.8;
+}
+a i {
+  margin-left: 7px;
+}
+.banner {
+  height: 200px;
+  color: #fff;
+  margin-bottom: 40px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner.banner-gold {
+  background-image: url("../img/banner-gold.svg");
+}
+.banner.banner-silver {
+  background-image: url("../img/banner-silver.svg");
+}
+.banner.banner-bronze {
+  background-image: url("../img/banner-bronze.svg");
+}
+.item-details .item-img {
+  width: 560px;
+}
+.item-details .item-descr .item-descr-txt {
+  margin: 20px 0 20px 0;
+}
+.item-details .item-descr .colour-block,
+.item-details .item-descr .achievement {
+  padding: 15px 0 15px 0;
+}
+.item-details .item-descr .colour-block {
+  border-top: 1px solid #575757;
+  border-bottom: 1px solid #575757;
+}
+.item-details .item-descr .colour-block .colour-block-list {
+  margin-left: 40px;
+}
+.item-details .item-descr .colour-block .colour-block-list .colour-block-list-img {
+  width: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.item-details .item-descr .colour-block .colour-block-list .colour-block-list-img.active {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #3A2F28;
+}
+.item-details .item-descr .colour-block .colour-block-list .colour-block-list-img:hover {
+  opacity: 0.8;
+}
+.item-details .item-descr .colour-block .colour-block-list .colour-block-list-img + .colour-block-list-img {
+  margin-left: 12px;
+}
+.item-details .item-descr .achievement .achievement-block-list-img {
+  width: 100px;
+}
+.item-details .item-descr .achievement .achievement-block-list-img + .achievement-block-list-img {
+  margin-left: 15px;
+}
+hr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #575757;
+}
+footer {
+  font-size: 12px;
+  padding-top: 30px;
+}
+footer .bold {
+  font-weight: 600;
+}
+footer .footer-logo {
+  margin-right: 20px;
+}
+footer .footer-logo img {
+  width: 87px;
+}
+footer .contacts-descr {
+  font-weight: 300;
+}
+footer a {
+  display: block;
+}
+footer a:hover {
+  color: #4cc7e9;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+footer a + a,
+footer .bold + a {
+  margin-top: 10px;
+}
+footer .rights-block {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .iframe-wrapper {
+    margin-bottom: 15px;
+  }
+  .iframe-wrapper iframe {
+    height: 190px;
+  }
+  .item-details .item-img {
+    width: 304px;
+  }
+  .item-details .item-descr .colour-block .colour-block-list {
+    width: 100%;
+    margin-left: unset;
+    margin-top: 12px;
+  }
+  .item-details .item-descr .colour-block.silver {
+    border-bottom: none;
+  }
+  .item-details .item-descr .achievement .achievement-block-list {
+    width: 100%;
+    margin-left: unset;
+    margin-top: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .title-1 {
+    font-size: 36px;
+  }
+  .iframe-wrapper {
+    margin-bottom: 20px;
+  }
+  .iframe-wrapper iframe {
+    height: 384px;
+  }
+  .banner {
+    height: 200px;
+    background-position: 86%;
+  }
+  .item-details .item-img {
+    width: 350px;
+  }
+  .item-details .item-descr .colour-block {
+    width: 100%;
+  }
+  .item-details .item-descr .colour-block .colour-block-list {
+    margin-left: unset;
+    margin-top: 12px;
+  }
+  .item-details .item-descr .colour-block.silver {
+    border-bottom: none;
+  }
+  .item-details .item-descr .achievement .achievement-block-list {
+    width: 100%;
+    margin-left: unset;
+    margin-top: 12px;
+  }
+}
