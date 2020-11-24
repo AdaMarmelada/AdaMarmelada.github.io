@@ -264,6 +264,9 @@ a.btn:hover .icon-cart {
 .item-details .slider .slick-arrow.arrow-left:hover .icon-arrow-full-white {
   display: inline-block;
 }
+.item-details .slider .slick-arrow.slick-disabled {
+  visibility: hidden;
+}
 hr {
   margin: 0;
   padding: 0;
