@@ -135,7 +135,7 @@ a.btn:hover .icon-cart {
 .banner {
   width: 860px;
   height: 523px;
-  margin-bottom: 40px;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .banner.banner-603 {
