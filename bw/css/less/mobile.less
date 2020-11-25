@@ -1,37 +1,88 @@
 @media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    max-width: 290px!important;
+    padding: 0!important;
+    margin: 0 auto;
+  }
+  #front, #sub {
+    .container {
+      max-width: 290px !important;
+    }
+  }
+  .title-1 {
+    font-size: 24px;
+  }
+  section {
+    padding-bottom: 60px;
+  }
+  .section-descr {
+    margin-bottom: 20px;
+  }
   .iframe-wrapper {
     iframe {
-      height: 190px;
+      height: 160px;
     }
-
     margin-bottom: 15px;
+  }
+  .banner {
+    width: 288px;
+    height: 200px;
+    //background-position: 86%;
+    margin-bottom: 12px;
+
+    &.banner-small {
+      width: 288px;
+      height: 200px;
+      //background-position: 86%;
+      margin-bottom: 12px;
+
+      &.banner-htm6 {
+        background-position: center;
+      }
+    }
   }
   .item-details {
     .item-img {
       width: 304px;
     }
+    .item-descr-txt {
+      margin-bottom: 20px;
+    }
+    .colour-block {
+      margin-bottom: 110px;
 
-    .item-descr {
-      .colour-block {
-        .colour-block-list {
-          width: 100%;
-          margin-left: unset;
-          margin-top: 12px;
-        }
-
-        &.silver {
-          border-bottom: none;
-        }
+      .colour-block-list {
+        width: 100%;
+        margin-left: unset;
+        margin-top: 12px;
       }
 
-      .achievement {
-        .achievement-block-list {
-          width: 100%;
-          margin-left: unset;
-          margin-top: 12px;
+      &.silver {
+        border-bottom: none;
+      }
+    }
+
+    .achievement {
+      .achievement-block-list {
+        width: 100%;
+        margin-left: unset;
+        margin-top: 12px;
+      }
+    }
+    .slider {
+      .slick-arrow {
+        width: 49%;
+        bottom: 11%;
+        top: unset;
+
+        &.arrow-right {
+          right: 0%;
+          left: unset;
+        }
+        &.arrow-left {
+          left: 0%;
         }
       }
     }
   }
-
 }

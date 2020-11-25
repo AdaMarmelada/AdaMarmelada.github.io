@@ -20,6 +20,9 @@ a {
     color: #000000;
     text-decoration: underline;
   }
+  &.btn {
+    border-radius: unset!important;
+  }
 }
 .title-1 {
   font-weight: 600;
@@ -123,14 +126,14 @@ a  {
     }
   }
 }
+.section-descr {
+  font-weight: 300;
+  margin-bottom: 40px;
+}
 .item-details {
   width: 260px;
   position: relative;
 
-  .section-descr {
-    font-weight: 300;
-    margin-bottom: 40px;
-  }
   .title-1 {
     margin-bottom: 40px;
   }
@@ -139,11 +142,9 @@ a  {
     margin-bottom: 40px;
   }
   .colour-block {
-    padding: 15px 0 15px 0;
-  }
-  .colour-block {
     border-bottom: 2px solid @baseTextColor;
     margin-bottom: 40px;
+    padding: 15px 0 15px 0;
 
     .colour-block-list{
       margin-left: 40px;

@@ -61,6 +61,9 @@ a:hover {
   color: #000000;
   text-decoration: underline;
 }
+a.btn {
+  border-radius: unset!important;
+}
 .title-1 {
   font-weight: 600;
   font-size: 36px;
@@ -157,13 +160,13 @@ a.btn:hover .icon-cart {
 .banner.banner-small.banner-asw {
   background-image: url("../img/ASW610XP.svg");
 }
+.section-descr {
+  font-weight: 300;
+  margin-bottom: 40px;
+}
 .item-details {
   width: 260px;
   position: relative;
-}
-.item-details .section-descr {
-  font-weight: 300;
-  margin-bottom: 40px;
 }
 .item-details .title-1 {
   margin-bottom: 40px;
@@ -172,11 +175,9 @@ a.btn:hover .icon-cart {
   margin-bottom: 40px;
 }
 .item-details .colour-block {
-  padding: 15px 0 15px 0;
-}
-.item-details .colour-block {
   border-bottom: 2px solid #000;
   margin-bottom: 40px;
+  padding: 15px 0 15px 0;
 }
 .item-details .colour-block .colour-block-list {
   margin-left: 40px;
@@ -308,27 +309,76 @@ footer .rights-block {
   margin-bottom: 40px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    max-width: 290px!important;
+    padding: 0!important;
+    margin: 0 auto;
+  }
+  #front .container,
+  #sub .container {
+    max-width: 290px !important;
+  }
+  .title-1 {
+    font-size: 24px;
+  }
+  section {
+    padding-bottom: 60px;
+  }
+  .section-descr {
+    margin-bottom: 20px;
+  }
   .iframe-wrapper {
     margin-bottom: 15px;
   }
   .iframe-wrapper iframe {
-    height: 190px;
+    height: 160px;
+  }
+  .banner {
+    width: 288px;
+    height: 200px;
+    margin-bottom: 12px;
+  }
+  .banner.banner-small {
+    width: 288px;
+    height: 200px;
+    margin-bottom: 12px;
+  }
+  .banner.banner-small.banner-htm6 {
+    background-position: center;
   }
   .item-details .item-img {
     width: 304px;
   }
-  .item-details .item-descr .colour-block .colour-block-list {
+  .item-details .item-descr-txt {
+    margin-bottom: 20px;
+  }
+  .item-details .colour-block {
+    margin-bottom: 110px;
+  }
+  .item-details .colour-block .colour-block-list {
     width: 100%;
     margin-left: unset;
     margin-top: 12px;
   }
-  .item-details .item-descr .colour-block.silver {
+  .item-details .colour-block.silver {
     border-bottom: none;
   }
-  .item-details .item-descr .achievement .achievement-block-list {
+  .item-details .achievement .achievement-block-list {
     width: 100%;
     margin-left: unset;
     margin-top: 12px;
+  }
+  .item-details .slider .slick-arrow {
+    width: 49%;
+    bottom: 11%;
+    top: unset;
+  }
+  .item-details .slider .slick-arrow.arrow-right {
+    right: 0%;
+    left: unset;
+  }
+  .item-details .slider .slick-arrow.arrow-left {
+    left: 0%;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -336,6 +386,10 @@ footer .rights-block {
     max-width: 736px!important;
     padding: 0!important;
     margin: 0 auto;
+  }
+  #front .container,
+  #sub .container {
+    max-width: 736px!important;
   }
   .title-1 {
     font-size: 36px;
