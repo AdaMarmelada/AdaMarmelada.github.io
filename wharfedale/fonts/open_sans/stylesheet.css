@@ -1,0 +1,20 @@
+@font-face{
+    font-family: 'open_sans_bold';
+    src: url("OpenSans-Bold.ttf") format('truetype');
+}
+@font-face{
+    font-family: 'open_sans_regular';
+    src: url("OpenSans-Regular.ttf") format('truetype');
+}
+@font-face{
+    font-family: 'open_sans_exbold';
+    src: url("OpenSans-ExtraBold.ttf") format('truetype');
+}
+@font-face{
+    font-family: 'open_sans_light';
+    src: url("OpenSans-Light.ttf") format('truetype');
+}
+@font-face{
+    font-family: 'open_sans_semibold';
+    src: url("OpenSans-SemiBold.ttf") format('truetype');
+}
