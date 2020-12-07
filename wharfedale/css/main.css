@@ -1,0 +1,366 @@
+.icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.3s opacity;
+}
+.icon.icon-arrow {
+  width: 14.38px;
+  height: 5.31px;
+  background-image: url("../img/icons/arrow-right.svg");
+}
+.icon.icon-cart {
+  width: 17.01px;
+  height: 13.02px;
+  background-image: url("../img/icons/cart.svg");
+}
+.icon.icon-cart-black {
+  width: 17.01px;
+  height: 13.02px;
+  background-image: url("../img/icons/cart-black.svg");
+}
+.icon.icon-phone {
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/icons/phone.svg");
+}
+.icon.icon-arrow-diag {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  background-image: url("../img/icons/arrow-diag.svg");
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'open_sans_regular';
+  font-size: 16px!important;
+  color: #000;
+}
+a {
+  color: #000;
+}
+.container {
+  padding: 0;
+}
+.header-logo__wharfedale img {
+  width: 290px;
+}
+.header-logo__pult img {
+  width: 85px;
+}
+.banner-fullscreen {
+  color: #fff;
+  height: 100vh;
+  background-image: url("../img/header-banner.svg");
+  background-size: cover;
+  background-position: center;
+}
+.banner-fullscreen .overlay {
+  width: 50%;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.2);
+  padding: 25px 50px;
+}
+.banner-fullscreen .overlay .banner-details {
+  margin-top: 15%;
+}
+.banner-fullscreen .overlay .header-title {
+  font-weight: 600;
+  font-size: 60px;
+  font-family: 'open_sans_semibold';
+}
+.banner-fullscreen .overlay .header-descr {
+  font-weight: 300;
+  font-size: 24px;
+  font-family: 'open_sans_light';
+}
+.banner-fullscreen .overlay .header-link {
+  color: #fff;
+  font-weight: 600;
+}
+.banner-fullscreen .overlay .header-link:hover {
+  color: #fff;
+}
+.banner-fullscreen .overlay .header-link.overview {
+  font-size: 24px;
+}
+.banner-fullscreen .overlay .achiev-block {
+  margin: 10% 0;
+}
+.banner-fullscreen .overlay .achiev-block img {
+  width: 125px;
+}
+.banner-fullscreen .overlay nav {
+  font-family: open_sans_regular;
+  color: #fff;
+}
+.banner-fullscreen .overlay nav a + a {
+  margin-left: 20px;
+}
+.title-1 {
+  font-family: open_sans_semibold;
+  font-size: 80px;
+}
+.text-bold {
+  font-weight: 600;
+  font-size: 21px;
+}
+section {
+  padding: 120px 0;
+}
+a.btn {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+a.btn .icon-arrow-black,
+a.btn .icon-cart-black {
+  display: inherit;
+}
+a.btn .icon-arrow,
+a.btn .icon-cart {
+  display: none;
+}
+a.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+a.btn:hover .icon-arrow-black,
+a.btn:hover .icon-cart-black {
+  display: none;
+}
+a.btn:hover .icon-arrow,
+a.btn:hover .icon-cart {
+  display: inherit;
+}
+.banner {
+  height: 434px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner.banner-floor {
+  background-image: url("../img/floor.svg");
+}
+.banner.banner-center {
+  background-image: url("../img/center.svg");
+}
+#floor .item-details .item-img {
+  width: 236px;
+}
+.item-details .item-img {
+  width: 555px;
+}
+.item-details .item-descr .category-title {
+  font-family: open_sans_regular;
+  font-size: 24px;
+}
+.item-details .item-descr .pre-order-txt {
+  font-family: open_sans_semibold;
+}
+.item-details .item-descr .item-descr-txt {
+  margin: 20px 0 20px 0;
+}
+.item-details .item-descr .colour-block {
+  padding: 20px 0;
+}
+.item-details .item-descr .colour-block .colour-block-list .colour-block-list-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+.item-details .item-descr .colour-block .colour-block-list .colour-block-list-icon.brown {
+  background-color: #472E1E;
+}
+.item-details .item-descr .colour-block .colour-block-list .colour-block-list-icon.black {
+  background-color: #000000;
+}
+.item-details .item-descr .colour-block .colour-block-list .colour-block-list-icon.white {
+  background-color: #ffffff;
+}
+.item-details .item-descr .colour-block .colour-block-list .colour-block-list-icon.beige {
+  background-color: #C4A378;
+}
+.item-details .item-descr .colour-block .colour-block-list .colour-block-list-icon.active {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #000;
+}
+.item-details .item-descr .colour-block .colour-block-list .colour-block-list-icon:hover {
+  opacity: 0.8;
+}
+.item-details .item-descr .colour-block .colour-block-list-icon + .colour-block-list-icon {
+  margin-left: 12px;
+}
+.item-details + .item-details {
+  margin-top: 120px;
+}
+hr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #575757;
+}
+footer {
+  font-size: 12px;
+  padding-top: 30px;
+}
+footer .bold {
+  font-weight: 600;
+}
+footer .footer-logo {
+  margin-right: 20px;
+}
+footer .footer-logo img {
+  width: 87px;
+}
+footer .contacts-descr {
+  font-weight: 300;
+}
+footer a {
+  display: block;
+}
+footer a:hover {
+  color: #4cc7e9;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+footer a + a,
+footer .bold + a {
+  margin-top: 10px;
+}
+footer .rights-block {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    width: calc(100% - 40px);
+  }
+  .header-logo__wharfedale img {
+    width: 160px;
+  }
+  .header-logo__pult img {
+    width: 51px;
+  }
+  .banner-fullscreen .overlay {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 25px 20px;
+    width: 100%;
+  }
+  .banner-fullscreen .overlay .header-title {
+    font-size: 35px;
+  }
+  .banner-fullscreen .overlay .header-descr {
+    font-size: 14px;
+  }
+  .banner-fullscreen .overlay .header-link {
+    width: 100%;
+  }
+  .banner-fullscreen .overlay .header-link.overview {
+    font-size: 14px;
+  }
+  .banner-fullscreen .overlay .achiev-block img {
+    width: 89px;
+  }
+  .banner-fullscreen .overlay nav a + a {
+    margin-left: unset;
+    margin-top: 20px;
+  }
+  section {
+    padding: 40px 0;
+  }
+  .title-1 {
+    font-size: 35px;
+  }
+  .banner {
+    height: 82px;
+  }
+  #floor .item-details .item-img {
+    width: 130px;
+  }
+  .item-details .item-img {
+    width: 320px;
+  }
+  .item-details .item-descr .colour-block .colour-block-list {
+    width: 100%;
+    margin-left: unset;
+    margin-top: 12px;
+  }
+  .item-details + .item-details {
+    margin-top: 40px;
+  }
+  .icon.icon-arrow-diag {
+    width: 12px;
+    height: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .header-logo__wharfedale img {
+    width: 160px;
+  }
+  .header-logo__pult img {
+    width: 65px;
+  }
+  section {
+    padding: 80px 0;
+  }
+  .banner-fullscreen .overlay {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px 25px;
+  }
+  .banner-fullscreen .overlay .banner-details {
+    margin-top: 35%;
+  }
+  .banner-fullscreen .overlay .header-title {
+    font-size: 35px;
+  }
+  .banner-fullscreen .overlay .header-descr {
+    font-size: 14px;
+  }
+  .banner-fullscreen .overlay .header-link {
+    width: 100%;
+  }
+  .banner-fullscreen .overlay .header-link.overview {
+    font-size: 14px;
+  }
+  .banner-fullscreen .overlay .achiev-block img {
+    width: 89px;
+  }
+  .banner-fullscreen .overlay nav a + a {
+    margin-left: unset;
+    margin-top: 20px;
+  }
+  .title-1 {
+    font-size: 35px;
+  }
+  .banner {
+    height: 174px;
+  }
+  #floor .item-details .item-img {
+    width: 210px;
+  }
+  .item-details .item-img {
+    width: 359px;
+  }
+  .item-details .item-descr .category-title {
+    font-size: 14px;
+  }
+  .item-details + .item-details {
+    margin-top: 80px;
+  }
+  .icon.icon-arrow-diag {
+    width: 12px;
+    height: 12px;
+  }
+}

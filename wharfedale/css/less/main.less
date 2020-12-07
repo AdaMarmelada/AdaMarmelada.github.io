@@ -1,0 +1,247 @@
+@import "icons.less";
+@import "colours.less";
+
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin:0;
+  padding:0;
+  font-family: 'open_sans_regular';
+  font-size: 16px!important;
+  color: @baseTextColor;
+}
+a {
+  color: @baseTextColor;
+}
+.container {
+  padding: 0;
+}
+.header-logo__wharfedale {
+  img{
+    width: 290px;
+  }
+}
+.header-logo__pult {
+  img {
+    width: 85px;
+  }
+}
+.banner-fullscreen {
+  color: @bannerTextColor;
+  height: 100vh;
+  background-image: url("../img/header-banner.svg");
+  background-size: cover;
+  background-position: center;
+
+  .overlay {
+    width: 50%;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.2);
+    padding: 25px 50px;
+
+    .banner-details {
+      margin-top: 15%;
+    }
+
+    .header-title {
+      font-weight: 600;
+      font-size: 60px;
+      font-family: 'open_sans_semibold';
+    }
+    .header-descr {
+      font-weight: 300;
+      font-size: 24px;
+      font-family: 'open_sans_light';
+    }
+    .header-link {
+      color: @bannerTextColor;
+      font-weight: 600;
+      &:hover {
+        color: @bannerTextColor;
+      }
+      &.overview {
+        font-size: 24px;
+      }
+    }
+    .achiev-block {
+      margin: 10% 0;
+      img {
+        width: 125px;
+      }
+    }
+    nav {
+      font-family: open_sans_regular;
+      color: #fff;
+
+      a + a {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+.title-1 {
+  font-family: open_sans_semibold;
+  font-size: 80px;
+}
+.text-bold {
+  font-weight: 600;
+  font-size: 21px;
+}
+section {
+  padding: 120px 0;
+}
+
+a  {
+  &.btn {
+    background-color: @bannerTextColor;
+    color: @baseTextColor;
+    border: 1px solid @baseTextColor;
+
+    .icon-arrow-black, .icon-cart-black {
+      display: inherit;
+    }
+    .icon-arrow, .icon-cart {
+      display: none;
+    }
+
+    &:hover {
+      background-color: @baseTextColor;
+      color: @bannerTextColor;
+
+      .icon-arrow-black, .icon-cart-black {
+        display: none;
+      }
+      .icon-arrow, .icon-cart {
+        display: inherit;
+      }
+    }
+  }
+}
+.banner {
+  height: 434px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &.banner-floor {
+    background-image: url("../img/floor.svg");
+  }
+  &.banner-center {
+    background-image: url("../img/center.svg");
+  }
+}
+#floor {
+  .item-details {
+    .item-img {
+      width: 236px;
+    }
+  }
+}
+.item-details {
+  .item-img {
+    width: 555px;
+  }
+  .item-descr {
+    .category-title {
+      font-family: open_sans_regular;
+      font-size: 24px;
+    }
+    .pre-order-txt {
+      font-family: open_sans_semibold;
+    }
+    .item-descr-txt {
+      margin: 20px 0 20px 0;
+    }
+    .colour-block {
+      padding: 20px 0;
+
+      .colour-block-list {
+
+        .colour-block-list-icon {
+          width: 40px;
+          height: 40px;
+          cursor: pointer;
+          border-radius: 50%;
+          border: 1px solid #000000;
+
+          &.brown {
+            background-color: #472E1E;
+          }
+
+          &.black {
+            background-color: #000000;
+          }
+
+          &.white {
+            background-color: #ffffff;
+          }
+
+          &.beige {
+            background-color: #C4A378;
+          }
+
+          &.active {
+            box-shadow: 0 0 0 2px white, 0 0 0 4px #000;
+          }
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+      .colour-block-list-icon + .colour-block-list-icon {
+        margin-left: 12px;
+      }
+    }
+  }
+}
+.item-details + .item-details {
+  margin-top: 120px;
+}
+hr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #575757;
+}
+footer {
+  font-size: 12px;
+  padding-top: 30px;
+
+  .bold {
+    font-weight: 600;
+  }
+
+  .footer-logo {
+    margin-right: 20px;
+    img {
+      width: 87px;
+    }
+  }
+  .contacts-descr {
+    font-weight: 300;
+  }
+  a {
+    display: block;
+
+    &:hover {
+      color: #4cc7e9;
+      transition: color .3s;
+      text-decoration: none;
+    }
+  }
+  a + a, .bold + a {
+    margin-top: 10px;
+  }
+  .rights-block {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@import "mobile.less";
+@import "tablet.less";
