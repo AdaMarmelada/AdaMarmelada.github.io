@@ -1,0 +1,285 @@
+.icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.3s opacity;
+}
+.icon.icon-arrow {
+  width: 14.38px;
+  height: 5.31px;
+  background-image: url("../img/icons/arrow-right.svg");
+}
+.icon.icon-cart {
+  width: 17.01px;
+  height: 13.02px;
+  background-image: url("../img/icons/cart.svg");
+}
+.icon.icon-cart-black {
+  width: 17.01px;
+  height: 13.02px;
+  background-image: url("../img/icons/cart-black.svg");
+}
+.icon.icon-phone {
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/icons/phone.svg");
+}
+.icon.icon-arrow-diag {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  background-image: url("../img/icons/arrow-diag.svg");
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+  font-size: 18px!important;
+  color: #000;
+}
+.container {
+  padding: 0;
+}
+a {
+  color: #000;
+}
+.banner-fullscreen {
+  color: #fff;
+  height: 100vh;
+  background-image: url("../img/banner-fullsize.svg");
+  background-size: cover;
+  background-position: center;
+  padding: 25px 50px;
+}
+.banner-fullscreen .header-logo__pult img {
+  width: 85px;
+}
+.banner-fullscreen .header-logo__cambridge {
+  margin-bottom: 40px;
+}
+.banner-fullscreen .header-logo__cambridge img {
+  width: 380px;
+}
+.banner-fullscreen .header-descr {
+  font-weight: 300;
+  color: #fff;
+  width: 50%;
+}
+.banner-fullscreen .header-link {
+  color: #fff;
+  font-weight: 600;
+  padding: 30px;
+  border-radius: 14px;
+  border: 1px solid #fff;
+}
+.banner-fullscreen .header-link:hover {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.banner-fullscreen nav {
+  color: #fff;
+}
+.banner-fullscreen nav a + a {
+  margin-left: 40px;
+}
+section {
+  padding: 120px 0;
+}
+.banner {
+  height: 180px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 0 30px;
+  border-radius: 10px;
+  margin-bottom: 120px;
+}
+.banner.banner-ax {
+  background-image: url("../img/banner_ax.svg");
+}
+.banner.banner-cx {
+  background-image: url("../img/banner_cx.png");
+}
+.banner .banner-category {
+  font-size: 60px;
+  font-weight: 700;
+}
+.banner .banner-link {
+  font-size: 24px;
+  color: #fff;
+}
+.banner .banner-link:hover {
+  color: #fff;
+}
+#cx .product-list .product-list-item {
+  width: 47%;
+}
+.product-list .product-list-item {
+  padding: 15px;
+  border-radius: 10px;
+  width: 32%;
+}
+.product-list .product-list-item:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+}
+.product-list .product-list-item .product-title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.product-list .product-list-item img {
+  width: 323px;
+  margin-bottom: 20px;
+}
+.product-list .product-list-item .product-descr {
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+.product-list .product-list-item a.btn {
+  background-color: #1F1F1F;
+  border-radius: 8px;
+  padding: 28px;
+  text-align: center;
+  color: #fff;
+  border: none;
+}
+.product-list .product-list-item a.btn:hover {
+  background: linear-gradient(180deg, #444444 0%, #000000 100%);
+  transition: background 0.3s;
+}
+hr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #575757;
+}
+footer {
+  font-size: 12px;
+  padding-top: 30px;
+}
+footer .bold {
+  font-weight: 600;
+}
+footer .footer-logo {
+  margin-right: 20px;
+}
+footer .footer-logo img {
+  width: 87px;
+}
+footer .contacts-descr {
+  font-weight: 300;
+}
+footer a {
+  display: block;
+}
+footer a:hover {
+  color: #4cc7e9;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+footer a + a,
+footer .bold + a {
+  margin-top: 10px;
+}
+footer .rights-block {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    width: calc(100% - 40px) !important;
+  }
+  .banner-fullscreen {
+    background-position: center;
+    padding: 30px 20px;
+  }
+  .banner-fullscreen .header-logo__pult img {
+    width: 58px;
+  }
+  .banner-fullscreen .header-logo__cambridge {
+    margin-bottom: 20px;
+  }
+  .banner-fullscreen .header-logo__cambridge img {
+    width: 230px;
+  }
+  .banner-fullscreen .header-descr {
+    font-weight: 400;
+    width: 100%;
+    font-size: 12px;
+  }
+  .banner-fullscreen .header-link {
+    line-height: 1;
+    font-size: 60px;
+    padding: 20px;
+  }
+  .banner-fullscreen nav a + a {
+    margin-left: 20px;
+  }
+  section {
+    padding: 40px 0;
+  }
+  .banner {
+    height: 100px;
+    margin-bottom: 40px;
+  }
+  .banner .banner-category {
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .banner .banner-link {
+    font-size: 18px;
+  }
+  #cx .product-list .product-list-item {
+    width: 100%;
+  }
+  .product-list .product-list-item {
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+  }
+  .product-list .product-list-item .product-title {
+    font-size: 35px;
+  }
+  .product-list .product-list-item img {
+    width: 250px;
+  }
+  .product-list .product-list-item .product-descr {
+    font-size: 12px;
+  }
+  .product-list .product-list-item + .product-list-item {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .banner-fullscreen {
+    padding: 50px 20px;
+  }
+  .banner-fullscreen .header-descr {
+    width: 75%;
+  }
+  section {
+    padding: 80px 0;
+  }
+  .banner {
+    margin-bottom: 80px;
+  }
+  #cx .product-list .product-list-item {
+    width: 47%;
+  }
+  .product-list .product-list-item {
+    width: 47%;
+  }
+}
