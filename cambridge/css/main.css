@@ -251,6 +251,9 @@ footer .rights-block {
   .product-list .product-list-item img {
     width: 250px;
   }
+  .product-list .product-list-item img.lg {
+    width: 250px;
+  }
   .product-list .product-list-item .product-descr {
     font-size: 12px;
   }
@@ -276,5 +279,8 @@ footer .rights-block {
   }
   .product-list .product-list-item {
     width: 47%;
+  }
+  .product-list .product-list-item img.lg {
+    width: 324px;
   }
 }
