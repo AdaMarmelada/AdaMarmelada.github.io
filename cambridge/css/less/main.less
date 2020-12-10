@@ -48,6 +48,7 @@ a {
     padding: 30px;
     border-radius: 14px;
     border: 1px solid @bannerTextColor;
+    font-size: 60px;
 
     &:hover {
       background-color: @bannerTextColor;
@@ -122,6 +123,10 @@ section {
     img {
       width: 323px;
       margin-bottom: 20px;
+
+      &.lg{
+        width: 510px;
+      }
     }
     .product-descr {
       line-height: 27px;
@@ -135,10 +140,11 @@ section {
         text-align: center;
         color: @bannerTextColor;
         border: none;
+        transition: unset!important;
 
         &:hover {
           background: linear-gradient(180deg, #444444 0%, #000000 100%);
-          transition: background .3s;
+          transition: unset!important;
         }
       }
     }
