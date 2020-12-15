@@ -1,0 +1,44 @@
+.icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: .3s opacity;
+
+
+  &.icon-cart {
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/icons/cart-black.png");
+  }
+  &.icon-phone {
+    width: 17px;
+    height: 17px;
+    background-image: url("../img/icons/phone.svg");
+  }
+  &.icon-arrow-right {
+    width: 14px;
+    height: 14px;
+    transform: rotate(180deg);
+    background-image: url("../img/icons/arrow-white.svg");
+    vertical-align: baseline;
+  }
+  &.icon-descr {
+    width: 20px;
+    height: 20px;
+
+    &.bright {
+      background-image: url("../img/icons/bright.svg");
+    }
+    &.crop {
+      background-image: url("../img/icons/crop.svg");
+    }
+    &.contrast {
+      background-image: url("../img/icons/contrast.svg");
+    }
+    &.lamp {
+      background-image: url("../img/icons/lamp.svg");
+    }
+  }
+}

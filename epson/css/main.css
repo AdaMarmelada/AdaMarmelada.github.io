@@ -1,0 +1,296 @@
+.icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.3s opacity;
+}
+.icon.icon-cart {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icons/cart-black.png");
+}
+.icon.icon-phone {
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/icons/phone.svg");
+}
+.icon.icon-arrow-right {
+  width: 14px;
+  height: 14px;
+  transform: rotate(180deg);
+  background-image: url("../img/icons/arrow-white.svg");
+  vertical-align: baseline;
+}
+.icon.icon-descr {
+  width: 20px;
+  height: 20px;
+}
+.icon.icon-descr.bright {
+  background-image: url("../img/icons/bright.svg");
+}
+.icon.icon-descr.crop {
+  background-image: url("../img/icons/crop.svg");
+}
+.icon.icon-descr.contrast {
+  background-image: url("../img/icons/contrast.svg");
+}
+.icon.icon-descr.lamp {
+  background-image: url("../img/icons/lamp.svg");
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+  font-size: 14px!important;
+  color: #000;
+  background-color: #E5E5E5;
+}
+.container {
+  padding: 0;
+}
+a {
+  color: #000;
+}
+a.header-link {
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+}
+a.header-link:hover {
+  color: #fff;
+}
+.banner-fullscreen {
+  color: #fff;
+  height: 100vh;
+  padding: 30px 0;
+  background: linear-gradient(to right, #000000 30%, #3C80E7);
+}
+.banner-fullscreen .header-logo__pult img {
+  width: 85px;
+}
+.banner-fullscreen .circle {
+  width: 100px;
+}
+.banner-fullscreen .logo_epson {
+  width: 560px;
+}
+.banner-fullscreen nav {
+  color: #fff;
+}
+.title-1 {
+  font-weight: 800;
+  font-size: 66px;
+  line-height: 1;
+}
+.descr {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+}
+section {
+  padding: 80px 0;
+}
+.product-list {
+  margin-top: 80px;
+}
+.product-list .product-list-item {
+  padding: 20px;
+  border-radius: 20px;
+  width: 23%;
+  background-color: #fff;
+}
+.product-list .product-list-item:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+}
+.product-list .product-list-item .product-title {
+  font-weight: 800;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.product-list .product-list-item img {
+  width: 220px;
+  margin-bottom: 25px;
+}
+.product-list .product-list-item .product-descr {
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+.product-list .product-list-item a.btn {
+  background-color: #FAAD14;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #FAAD14;
+  box-shadow: 0px 0px 10px rgba(250, 173, 20, 0.2);
+  border-radius: 8px;
+  text-align: center;
+  color: #000;
+  border: none;
+  transition: unset;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding: 9px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  vertical-align: middle;
+}
+.product-list .product-list-item a.btn:hover i {
+  transform: translate(-100%, 0);
+  transition: all 0.3s ease-in-out;
+}
+.product-list .product-list-item a.btn:hover::before {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all 0.3s ease-in-out;
+}
+.product-list .product-list-item a.btn::before {
+  content: attr(data-hover);
+  position: absolute;
+  top: 0.9em;
+  left: 44%;
+  opacity: 0;
+  transform: translate(-20%, 0);
+  transition: all 0.3s ease;
+}
+hr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #575757;
+}
+footer {
+  font-size: 12px;
+  padding-top: 30px;
+}
+footer .bold {
+  font-weight: 600;
+}
+footer .footer-logo {
+  margin-right: 20px;
+}
+footer .footer-logo img {
+  width: 87px;
+}
+footer .contacts-descr {
+  font-weight: 300;
+}
+footer a {
+  display: block;
+}
+footer a:hover {
+  color: #4cc7e9;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+footer a + a,
+footer .bold + a {
+  margin-top: 10px;
+}
+footer .rights-block {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    width: calc(100% - 46px) !important;
+  }
+  .banner-fullscreen {
+    color: #fff;
+    height: 100vh;
+    padding: 32px 0;
+  }
+  .banner-fullscreen .logo_epson {
+    width: 272px;
+  }
+  .title-1 {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1;
+  }
+  .descr {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  section {
+    padding: 40px 0;
+  }
+  .product-list {
+    margin-top: 40px;
+  }
+  .product-list .product-list-item {
+    padding: 10px;
+    width: 47%;
+  }
+  .product-list .product-list-item img {
+    width: 104px;
+    margin-bottom: 15px;
+  }
+  .product-list .product-list-item .product-descr {
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 10px;
+    margin-bottom: 15px;
+  }
+  .product-list .product-list-item a.btn {
+    padding: 3px;
+    font-size: 10px;
+    line-height: 1;
+  }
+  .product-list .product-list-item a.btn::before {
+    top: 0.5em;
+    left: 44%;
+  }
+  .icon.icon-cart {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .banner-fullscreen {
+    padding: 25px 0;
+  }
+  .banner-fullscreen .header-logo__pult img {
+    width: 80px;
+  }
+  .banner-fullscreen .logo_epson {
+    width: 350px;
+  }
+  .title-1 {
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 1;
+  }
+  .descr {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  section {
+    padding: 40px 0;
+  }
+  .product-list {
+    margin-top: 40px;
+  }
+  .product-list .product-list-item {
+    padding: 10px;
+    width: 31%;
+  }
+  .product-list .product-list-item img {
+    width: 204px;
+    margin-bottom: 25px;
+  }
+  .product-list .product-list-item .product-descr {
+    line-height: 27px;
+    margin-bottom: 20px;
+  }
+}
